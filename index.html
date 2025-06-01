@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV & Portofolio - Programmer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #5d4037;
+      --secondary-color: #efebe9;
+      --text-color: #3e2723;
+      --bg-color: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #8d6e63, #5d4037);
+      color: #fff;
+      padding: 6rem 1rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      z-index: 2;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-top: 6rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      background: var(--bg-color);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      margin-bottom: 1.2rem;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
+
+    /* Justify text for "Tentang Saya" */
+    .justify-text {
+      text-align: justify;
+    }
+
+    /* Skills with percent */
+    .skills {
+      margin-bottom: 1.5rem;
+    }
+
+    .skill {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      flex: 1;
+    }
+
+    .progress-bar {
+      background: #d7ccc8;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 10px;
+      flex: 3;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    .progress {
+      height: 10px;
+      background: var(--primary-color);
+    }
+
+    .skill-percent {
+      flex: 0 0 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      text-align: right;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #4e342e;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 0.5rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact p {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #5d4037;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 0 0 16px 16px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      .profile-container {
+        top: 20px;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      section {
+        padding: 1.2rem;
+      }
+
+      .skill {
+        flex-wrap: wrap;
+      }
+
+      .progress-bar {
+        flex: 1 1 100%;
+        margin: 5px 0;
+      }
+
+      .skill-percent {
+        flex: 0 0 auto;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-container">
+      <img src="foto.jpg" alt="Foto Profil" class="profile-pic">
+    </div>
+    <h1>Achmad Habibus Zakaria</h1>
+    <p>Programmer | Web Developer | Software Engineer</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tentang Saya</h2>
+      <p class="justify-text">Saya adalah lulusan S1 Pendidikan Teknik Informatika dari Universitas Negeri Malang tahun 2025. Saya memiliki pemahaman 
+      dalam berbagai bahasa pemrograman serta keterampilan desain yang mendukung pengembangan solusi teknologi yang kreatif dan 
+      efektif. Sebagai fresh graduate, saya bersemangat untuk mengaplikasikan ilmu yang saya pelajari dalam dunia kerja, beradaptasi 
+      dengan cepat, serta terus belajar untuk menghadapi tantangan di bidang teknologi informasi. Saya siap berkontribusi secara 
+      aktif dalam tim dan berkomitmen untuk terus mengembangkan kemampuan teknis maupun soft skills saya.</p>
+    </section>
+
+    
+
+    <section>
+      <h2>Keahlian</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-label">Desain Web</div>
+          <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+          <div class="skill-percent">95%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">C++</div>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          <div class="skill-percent">75%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">HTML</div>
+          <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+          <div class="skill-percent">75%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">CSS</div>
+          <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+          <div class="skill-percent">60%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">JavaScript</div>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          <div class="skill-percent">60%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-label">PHP</div>
+          <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+          <div class="skill-percent">60%</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pengalaman</h2>
+      <div class="project">
+        <h3>RIMO ALLIANCE (2020 - 2021)</h3>
+        <p>Saya mengelola lebih dari 5 lomba esports tiap bulan lintas divisi, bertindak sebagai koordinator event dengan peserta lebih dari 50 orang, serta mengatur jadwal, regulasi, logistik, dan komunikasi antar tim. Selain itu, saya juga menganalisis hasil lomba dan menyusun laporan evaluasi untuk meningkatkan efektivitas penyelenggaraan di event berikutnya.</p>
+      </div>
+      <div class="project">
+        <h3>SMKN 1 Boyolangu (2024)</h3>
+        <p>Saya mengajar di kelas PPLG dan BP serta membimbing lebih dari 10 siswa dalam memahami materi, menyusun rencana pembelajaran yang sistematis, dan melakukan evaluasi berkala. Saya juga membantu administrasi sekolah dengan merekap dan mengelola data akademik siswa, serta berkolaborasi dengan guru dan staf untuk merancang strategi pembelajaran yang sesuai kebutuhan.</p>
+      </div>
+    <div class="project">
+        <h3> Bapenda Kota Malang (2024)</h3>
+        <p>Saya mengajar di kelas PPLG dan BP serta membimbing lebih dari 10 siswa dalam memahami materi, menyusun rencana pembelajaran yang sistematis, dan melakukan evaluasi berkala. Saya juga membantu administrasi sekolah dengan merekap dan mengelola data akademik siswa, serta berkolaborasi dengan guru dan staf untuk merancang strategi pembelajaran yang sesuai kebutuhan.</p>
+      </div>
+	</section>
+	
+	<section>
+  <h2>Sertifikat</h2>
+  <ul>
+    <li>
+      <strong>Sertifikat UI/UX VIHVAS "Virtual Introduction To The Human Vascular Network System"</strong><br>
+      Kementrian Hukum dan Hak Asasi Manusia, Mei 2023<br>
+      <a href="https://drive.google.com/file/d/1dmyyQ8gTLYiv-6LFA3cpSOaRu2Z_NCrQ/view?usp=drive_link" target="_blank">Lihat Sertifikat</a>
+    </li>
+    <li>
+      <strong>Sertifikat Intermittent Renewable Energy Source (IRES): Opportunities adn Challenges"</strong><br>
+      Universitas Negeri Malang, September 2021 <br>
+	  <a href="https://drive.google.com/file/d/1BB5CWU-XRrZE9Dp9tBAodMhfjrStA2Wp/view?usp=drive_link" target="_blank">Lihat Sertifikat</a>
+    </li>
+    <li>
+      <strong>Sertifikat Adaptable Technologies For Glorious Revolution</strong><br>
+      Universitas Negeri Malang, September 2021 <br>
+	  <a href="https://drive.google.com/file/d/1MlcU3MpWnv-iUAr8HRmKRF9eOSCRopcD/view?usp=drive_link" target="_blank">Lihat Sertifikat</a>
+    </li>
+  </ul>
+</section>
+
+    <section>
+      <h2>Portofolio</h2>
+      <div class="project">
+        <h3>Project Desain Web "Pondokku.Id </h3>
+        <p>Pondokku.id adalah platform pendaftaran pesantren online yang memudahkan calon santri mendaftar tanpa harus antre. Dengan fitur pencarian pondok, formulir digital, dan notifikasi otomatis, Pondokku.id membantu proses pendaftaran jadi lebih cepat, efisien, dan terorganisir.</p>
+        <img src="portofolio/1.png" alt="Preview Project A">
+      </div>
+	  <div class="project">
+        <h3>Project Desain Web "Vihvas"</h3>
+        <p>Vihvas (Virtual Human Vascular) adalah proyek desain web berbasis AR/VR yang bertujuan mempermudah siswa dalam mempelajari organ tubuh manusia secara interaktif. Dengan visualisasi 3D dan pengalaman imersif, Vihvas membantu siswa lebih cepat memahami materi dan meningkatkan minat belajar di bidang anatomi.</p>
+        <img src="portofolio/2.png" alt="Preview Project A">
+      </div>
+	  <div class="project">
+        <h3>Project Desain Web "Gametopia"</h3>
+        <p>Gametopia adalah platform web yang menyediakan layanan top up untuk berbagai game mobile dan PC. Dilengkapi fitur pencarian game, pilihan metode pembayaran lengkap, serta desain yang responsif dan user-friendly, Gametopia memudahkan pengguna melakukan transaksi top up dengan cepat dan aman.</p>
+        <img src="portofolio/3.png" alt="Preview Project A">
+      </div>
+	  <div class="project">
+        <h3>Project Pemrograman "BookStore"</h3>
+        <p>Bookstore adalah aplikasi berbasis Java dasar yang dirancang untuk mensimulasikan sistem penjualan buku secara digital. Aplikasi ini memiliki fitur login, registrasi, pencarian buku, pembelian, dan proses pembayaran sederhana. Meskipun dibangun dengan konsep dasar, Bookstore mencerminkan alur kerja toko buku digital secara fungsional.</p>
+        <img src="portofolio/4.png" alt="Preview Project A">
+      </div>
+	  <div class="project">
+        <h3>Project Pemrograman "Web Profile"</h3>
+        <p>Personal Web Profile adalah proyek pemrograman web yang menampilkan halaman Home berisi perkenalan diri dan daftar keahlian (skill). Website ini dirancang dengan desain yang responsif sehingga tetap nyaman diakses melalui berbagai perangkat, baik desktop maupun mobile.</p>
+        <img src="portofolio/5.png" alt="Preview Project A">
+      </div>
+	  
+    </section>
+
+    <section class="contact">
+      <h2>Kontak</h2>
+      <p>Email: Habibuzzakaria@email.com</p>
+      <p>Telepon: 0853-9118-6651</p>
+      <p>LinkedIn: linkedin.com/in/Achmadhabibuszakaria</p>
+      <p>GitHub: github.com/namaanda</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Achmad Habibus Zakaria - Semua Hak Dilindungi</p>
+  </footer>
+</body>
+</html>
